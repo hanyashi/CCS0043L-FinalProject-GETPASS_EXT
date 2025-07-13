@@ -17,7 +17,7 @@
         </div>
 
         <div class="qr-code-container">
-            <a href="">
+            <a href="receipt.php">
                 <div class="qr-code-bg">
                     <img src="../assets/images/qr-placeholder.png" alt="qr-code">
                 </div>
