@@ -14,8 +14,8 @@
         <h1 class="header">GET<i>PASS</i> - EZ<i>RIDE</i></h1>
         <img src="assets/images/getpass-icon.png" class="logo">
         <div class="button-container">
-            <button>Continue</button>
-            <button>Download App</button>
+            <a href="passengers_page.php"><button>Continue</button></a>
+            <a href=""><button>Download App</button></a>
         </div>
     </div>
 </body>

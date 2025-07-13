@@ -53,9 +53,11 @@
 .button-container {
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 .button-container button {
+    width: 100%;
     color: white;
     background-color: var(--primary);
     border: 0;
