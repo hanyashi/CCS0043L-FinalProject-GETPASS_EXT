@@ -31,8 +31,8 @@
         </div>
         <h1 class="header">Payment Options</h1>
         <div class="payment-options">
-            <a href="" target="_blank"><img src="../assets/images/gcash.png"></a>
-            <a href="" target="_blank"><img src="../assets/images/paymaya.png" width="224" height="224" style="border-radius: 27.5px;"></a>
+            <a href="payment.php"><img src="../assets/images/gcash.png"></a>
+            <a href="payment.php"><img src="../assets/images/paymaya.png" width="224" height="224" style="border-radius: 27.5px;"></a>
         </div>
     </div>
 </body>

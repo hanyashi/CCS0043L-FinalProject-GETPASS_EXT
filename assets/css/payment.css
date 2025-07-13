@@ -1,0 +1,26 @@
+@import "global-style.css";
+
+.main {
+    z-index: 1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0 0 40px;
+}
+
+.qr-code-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8rem !important;
+}
+
+.qr-code-bg {
+    background-color: var(--primary);
+    padding: 1.5rem;
+    border-radius: 20px;
+}
+
+.qr-code-bg img {
+    height: 450px;
+}
