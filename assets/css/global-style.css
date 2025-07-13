@@ -32,3 +32,23 @@
     z-index: -2;
     position: fixed;
 }
+
+.main {
+    z-index: 1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0 0 40px;
+}
+
+.navbar a {
+    color: var(--primary);
+    font-family: "Geo";
+    font-size: 3rem;
+    margin: 1vw;
+    text-decoration: none;
+}
+
+.navbar i {
+    color: var(--secondary);
+}

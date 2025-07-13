@@ -10,7 +10,7 @@
 <body>
     <div class="background">
     </div>
-    <div class="main">
+    <div class="main-index">
         <h1 class="header">GET<i>PASS</i> - EZ<i>RIDE</i></h1>
         <img src="assets/images/getpass-icon.png" class="logo">
         <div class="button-container">

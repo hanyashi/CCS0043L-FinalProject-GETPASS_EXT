@@ -22,7 +22,7 @@
     position: fixed;
 }
 
-.main {
+.main-index {
     z-index: 1;
     position: relative;
     display: flex;
