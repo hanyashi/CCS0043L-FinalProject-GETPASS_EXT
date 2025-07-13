@@ -9,5 +9,27 @@
 <body>
     <div class="background">
     </div>
+
+    <div class="main">
+        <div class="navbar">
+            <a href="index.php">GET<i>PASS</i> - EZ<i>RIDE</i> </a>
+        </div>
+
+        <div class="passenger">
+            <h1>Amount of Passengers</h1>
+            <div class="passenger-cards">
+                <button class="card">
+                    <img src="assets/images/1_person_icon.png" alt="1person">
+                </button>
+                <button class="card">
+                    <img src="assets/images/2_person_icon.png" alt="1person">
+                </button>
+                <button class="card">
+                    <img src="assets/images/3_person_icon.png" alt="1person">
+                </button>
+            </div>
+            <a href=""><button>Proceed to Payment</button></a>
+        </div>
+    </div>
 </body>
 </html>

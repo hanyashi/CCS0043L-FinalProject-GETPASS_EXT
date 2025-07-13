@@ -1,3 +1,19 @@
+:root {
+    --primary: #00AACC;
+    --secondary: #5D737F;
+}
+
+@font-face {
+    font-weight: 700;
+    font-family: "Geo";
+    src: url(../fonts/Geo-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Geo Italic";
+    src: url(../fonts/Geo-Italic.ttf);
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -15,4 +31,80 @@
     -webkit-filter: blur(8px);
     z-index: -2;
     position: fixed;
+}
+
+.main {
+    z-index: 1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0 0 40px;
+}
+
+.navbar a {
+    color: var(--primary);
+    font-family: "Geo";
+    font-size: 4rem;
+    margin-top: 2.5vh;
+    text-decoration: none;
+}
+
+.navbar i {
+    color: var(--secondary);
+}
+
+/* Passenger Cards */
+.passenger {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.passenger h1{
+    font-family: "Geo";
+    font-size: 4rem;
+}
+
+.passenger-cards {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.passenger-cards button{
+    border-radius: 20px;
+    padding: 4rem;
+    display: flex;
+    justify-content: center;
+    background-color: var(--primary);
+    width: 23rem;
+    height: 28rem;
+    border: none;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.25);
+    -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.25);
+    transition: 0.3s ease-in-out;
+}
+
+.passenger-cards button:hover {
+    transform: scale(1.1);
+}
+
+.passenger a button {
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin-top: 4rem;
+    background-color: var(--primary);
+    border: none;
+    font-size: 3rem;
+    font-family: "Geo";
+    color: white;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.25);
+    -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.25);
+    transition: 0.3s ease-in-out;
+}
+
+.passenger a button:hover {
+    transform: scale(1.1);
 }
