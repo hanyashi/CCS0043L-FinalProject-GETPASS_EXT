@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="../assets/css/passengers_page.css">
     <title>Passengers Page</title>
     <link rel="icon" href="../assets/images/getpass-icon.png">
+     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>  -->
 </head>
 <body>
     <div class="background">
@@ -35,8 +36,30 @@
                     <img src="../assets/images/5_person_icon.png" alt="5 People">
                 </button>
             </div>
+
+             <!-- <div class="cards">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><button><img src="../assets/images/1_person_icon.png" alt=""></button></div>
+                    <div class="swiper-slide"><button><img src="../assets/images/2_person_icon.png" alt=""></button></div>
+                    <div class="swiper-slide"><button><img src="../assets/images/3_person_icon.png" alt=""></button></div>
+                    <div class="swiper-slide"><button><img src="../assets/images/4_person_icon.png" alt=""></button></div>
+                    <div class="swiper-slide"><button><img src="../assets/images/5_person_icon.png" alt=""></button></div>
+                    <div class="swiper-slide"></div>
+                </div>
+                <div class="swiper-button-prev hidden"></div>
+                <div class="swiper-button-next hidden"></div>
+            </div>
+        </div>
+        <div class="button-container">
+            <a href="checkout.php" class="payment-button"><button>Proceed to Payment</button></a>
+        </div>  -->
             <a href="checkout.php" class="checkout"><button>Proceed to Payment</button></a>
         </div>
     </div>
+
+    <!-- For Swiper -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../assets/js/passengers_page.js"></script> -->
 </body>
 </html>
