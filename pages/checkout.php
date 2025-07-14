@@ -16,13 +16,13 @@
         <h1 class="header">CHECKOUT</h1>
         <div class="checkout-container">
             <form class="checkout-form" method="post">
-                <div>
+                <div class="labels">
                     <label for="student-number">Student Number:</label>
                     <div class="padding-div"></div>
                     <h2 class="total-label">Total:</h2>
                 </div>
                 <div class="padding-between"></div>
-                <div class="input-fields">
+                <div class="input-fields" class="inputs">
                     <input type="text" name="student-number" id="student-number">
                     <div class="padding-div"></div>
                     <h2 class="total-cost">₱100.00</h2>
@@ -30,9 +30,13 @@
             </form>
         </div>
         <h1 class="header">Payment Options</h1>
+        <!-- <div class="payment-options">
+            <a href="payment.php"><img src="../assets/images/gcash.png"></a>
+            <a href="payment.php"><img src="../assets/images/paymaya.png"></a>
+        </div> -->
         <div class="payment-options">
             <a href="payment.php"><img src="../assets/images/gcash.png"></a>
-            <a href="payment.php"><img src="../assets/images/paymaya.png" width="224" height="224" style="border-radius: 27.5px;"></a>
+            <a href="payment.php"><img src="../assets/images/paymaya.png"></a>
         </div>
     </div>
 </body>

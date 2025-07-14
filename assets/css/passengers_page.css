@@ -1,11 +1,8 @@
 @import "global-style.css";
 
-.main {
-    z-index: 1;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    margin: 10px 0 0 40px;
+body {
+    height: 100vh;
+    overflow: scroll;
 }
 
 .navbar a {
@@ -22,17 +19,22 @@
 
 /* Passenger Cards */
 .passenger {
-    margin-top: 2rem;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .passenger h1{
     font-family: "Geo";
     font-size: 4rem;
+    
 }
 
 .passenger-cards {
-    margin-top: 3rem;
+    width: 100%;
+    margin-top: 2rem;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -60,7 +62,7 @@
 .passenger a button {
     padding: 10px 20px;
     border-radius: 20px;
-    margin-top: 4rem;
+    margin-top: 2.5rem;
     background-color: var(--primary);
     border: none;
     font-size: 3rem;
@@ -74,4 +76,18 @@
 
 .passenger a button:hover {
     transform: scale(1.05);
+}
+
+@media only screen and (max-width: 1200px) {
+    .passenger-cards button{
+        padding: 4rem;
+        width: 15rem;
+        height: 16rem;
+        margin-bottom: 1rem;
+    }
+
+    .passenger a button {
+        margin: 0.5rem 1rem 1rem 1rem;
+    }
+    
 }

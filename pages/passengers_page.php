@@ -29,7 +29,7 @@
                     <img src="../assets/images/3_person_icon.png" alt="3 People">
                 </button>
             </div>
-            <a href="checkout.php"><button>Proceed to Payment</button></a>
+            <a href="checkout.php" class="checkout"><button>Proceed to Payment</button></a>
         </div>
     </div>
 </body>

@@ -1,18 +1,24 @@
 @import "global-style.css";
 
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
 .main {
     z-index: 1;
     position: relative;
-    display: flex;
-    flex-direction: column;
-    margin: 10px 0 0 40px;
+    width: 100vw;
+    height: 100vh;
 }
 
 .qr-code-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 8rem !important;
+    margin-top: 5vh;
 }
 
 .qr-code-bg {
@@ -22,5 +28,15 @@
 }
 
 .qr-code-bg img {
-    height: 450px;
+    height: 25rem;
+}
+
+@media only screen and (max-width: 1200px) {
+    .qr-code-bg img {
+        height: 17rem;
+    }
+    .qr-code-container {
+        flex-direction: column;
+    }
+
 }
