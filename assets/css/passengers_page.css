@@ -1,180 +1,134 @@
 @import "global-style.css";
 
 body {
-    height: 100vh;
-    overflow: scroll;
+  height: 100vh;
+  overflow: scroll;
 }
 
 .navbar a {
-    color: var(--primary);
-    font-family: "Geo";
-    font-size: 3rem;
-    margin: 1vw;
-    text-decoration: none;
+  color: var(--primary);
+  font-family: "Geo";
+  font-size: 3rem;
+  margin: 1vw;
+  text-decoration: none;
 }
 
 .navbar i {
-    color: var(--secondary);
+  color: var(--secondary);
 }
 
 /* Passenger Cards */
 .passenger {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.passenger h1{
-    font-family: "Geo";
-    font-size: 4rem;
-    
+.passenger h1 {
+  font-family: "Geo";
+  font-size: 4rem;
 }
 
 .passenger-cards {
-    width: 100%;
-    margin-top: 2rem;
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+  width: 100%;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
-.passenger-cards button{
-    border-radius: 20px;
-    padding: 4rem;
-    display: flex;
-    justify-content: center;
-    background-color: var(--primary);
-    width: 18rem;
-    height: 23rem;
-    border: none;
-    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.25);
-    -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.25);
-    -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.25);
-    transition: 0.3s ease-in-out;
+.passenger-cards button img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.passenger-cards button {
+  border-radius: 20px;
+  padding: 4rem;
+  display: flex;
+  justify-content: center;
+  background-color: var(--primary);
+  width: 18rem;
+  height: 23rem;
+  border: none;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.25);
+  transition: 0.3s ease-in-out;
 }
 
 .passenger-cards button:hover {
-    transform: scale(1.1);
+  transform: scale(1.025);
 }
 
-.passenger a button {
-    padding: 10px 20px;
-    border-radius: 20px;
-    margin-top: 2.5rem;
-    background-color: var(--primary);
-    border: none;
-    font-size: 3rem;
-    font-family: "Geo";
-    color: white;
-    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.25);
-    -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.25);
-    -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.25);
-    transition: 0.3s ease-in-out;
+.proceed-button {
+  padding: 10px 20px;
+  border-radius: 20px;
+  margin-top: 2.5rem;
+  background-color: var(--primary);
+  border: none;
+  font-size: 3rem;
+  font-family: "Geo";
+  color: white;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.25);
+  transition: 0.3s ease-in-out;
 }
 
-.passenger a button:hover {
-    transform: scale(1.05);
+.selected {
+  scale: 1.1;
+  border: 3px solid green !important;
+}
+
+.proceed-button:hover {
+  transform: scale(1.05);
 }
 
 @media only screen and (max-width: 1200px) {
-    .passenger-cards button{
-        padding: 4rem;
-        width: 15rem;
-        height: 16rem;
-        margin-bottom: 1rem;
-    }
+  .passenger-cards button {
+    padding: 4rem;
+    width: 15rem;
+    height: 16rem;
+    margin-bottom: 1rem;
+  }
 
-    .passenger a button {
-        margin: 0.5rem 1rem 1rem 1rem;
-    }
-    
+  .passenger a button {
+    margin: 0.5rem 1rem 1rem 1rem;
+  }
 }
 
-/* 
-.swiper {
-    width: 100%;
-    height: 30%;
-}
+@media screen and (max-width: 768px) {
+  .passenger h1 {
+    font-size: 2rem;
+  }
 
-.swiper-wrapper {
-    padding: 2.5rem;
+  .passenger-cards {
     display: flex;
-    gap: 1rem;
-}
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+  }
 
-.swiper-slide:last-child {
-    display: none;
-}
+  .passenger-cards button {
+    padding: 2rem;
+    width: 8rem;
+    height: 8rem;
+  }
 
-.swiper-slide button{
-    width: 25rem;
-    height: 25rem;
-    background-color: var(--primary);
-    border-radius: 20px;
-    border: none;
-    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.25);
-    -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.25);
-    -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.25);
-    transition: 0.3s ease-in-out;
-}
+  .proceed-button {
+    width: 80%;
+    font-size: 1.75rem;
+    padding: 10px;
+  }
 
-.swiper-slide button:hover {
-    transform: scale(1.1);
+  .passenger-cards button img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
 }
-
-@media only screen and (min-width: 400px) and (max-width: 500px) {
-    .main h1 {
-        margin-top: 7.5vh;
-    }
-    .swiper-slide button {
-        transform: scale(0.75);
-    }
-    .swiper-slide button:hover {
-        transform: scale(0.85);
-    }
-    .swiper-slide:first-child {
-        margin-left: 0;
-    }
-    .swiper-slide {
-        margin-left: 200px;
-        margin-right: 200px;
-    }
-    .swiper-slide:last-child {
-        display: inline;
-    }
-    .payment-button button {
-        transform: scaleX(0.75);
-    }
-}
-
-@media only screen and (min-width: 600px) and (max-width: 800px) {
-    .main h1 {
-        margin-top: 10vh;
-    }
-    .swiper-slide {
-        max-height: 400px;
-        margin: 0px 200px 0px 200px;
-    }
-    .swiper-slide:last-child {
-        display: inline;
-    }
-    .hidden {
-        display: none;
-        visibility: hidden;
-    }
-}
-
-@media only screen and (min-width: 1000px) and (max-width: 1200px) {
-    .main h1 {
-        margin-top: 10vh;
-    }
-    .swiper-slide {
-        max-height: 400px;
-        margin: 0px 120px 0px 120px;
-    }
-    .swiper-slide:last-child {
-        display: inline;
-    }
-} */

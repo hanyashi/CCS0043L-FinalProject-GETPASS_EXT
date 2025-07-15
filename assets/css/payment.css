@@ -1,42 +1,41 @@
 @import "global-style.css";
 
 body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
 }
 
 .main {
-    z-index: 1;
-    position: relative;
-    width: 100vw;
-    height: 100vh;
+  z-index: 1;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
 }
 
 .qr-code-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5vh;
 }
 
 .qr-code-bg {
-    background-color: var(--primary);
-    padding: 1.5rem;
-    border-radius: 20px;
+  background-color: var(--primary);
+  padding: 1.5rem;
+  border-radius: 20px;
 }
 
 .qr-code-bg img {
-    height: 25rem;
+  height: 25rem;
 }
 
 @media only screen and (max-width: 1200px) {
-    .qr-code-bg img {
-        height: 17rem;
-    }
-    .qr-code-container {
-        flex-direction: column;
-    }
-
+  .qr-code-bg img {
+    height: 17rem;
+  }
+  .qr-code-container {
+    flex-direction: column;
+  }
 }

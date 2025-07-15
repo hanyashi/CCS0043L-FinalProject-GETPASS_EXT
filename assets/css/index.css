@@ -1,107 +1,127 @@
+@import "global-style.css";
+
 :root {
-    --primary: #00AACC;
-    --secondary: #5D737F;
+  --primary: #00aacc;
+  --secondary: #5d737f;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    height: 100vh;
+  height: 100vh;
 }
 
-
 .background {
-    
-    width: 100vw;
-    height: 100vh;
-    background-size: cover;
-    background-image: url("../images/background.png");
-    background-repeat: no-repeat;
-    opacity: 0.25;
-    filter: blur(8px);
-    -webkit-filter: blur(8px);
-    z-index: -2;
-    position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-image: url("../images/background.png");
+  background-repeat: no-repeat;
+  opacity: 0.25;
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  z-index: -2;
+  position: fixed;
 }
 
 .main-index {
-    height: fit-content;
-    z-index: 1;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  height: fit-content;
+  z-index: 1;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container-index {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .header {
-    color: var(--primary);
-    font-family: "Geo";
-    font-size: 4rem;
-    margin-top: 2.5vh;
-    width: 100%;
-    text-align: center;
+  color: var(--primary);
+  font-family: "Geo";
+  font-size: 4rem;
+  margin-top: 2.5vh;
+  width: 100%;
+  text-align: center;
 }
 
 .header i {
-    color: var(--secondary);
+  color: var(--secondary);
 }
 
 .logo {
-    height: 20rem;
-    margin: 3rem 0;
-    border-radius: 1.5rem;
-    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.25);
-    -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.25);
-    -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.25);
+  height: 20rem;
+  margin: 0 3rem 3rem 3rem;
+  border-radius: 1.5rem;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.25);
 }
 
 .button-container {
-    /* border: 2px red solid; */
-    display: flex;
-    flex-direction: column;
-    /* justify-content: center; */
+  /* border: 2px red solid; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
 }
 
 .button-container button {
-    width: 100%;
-    color: white;
-    background-color: var(--primary);
-    border: 0;
-    font-size: 3rem;
-    padding: 10px;
-    margin: 10px 0;
-    font-family: "Geo";
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.25);
-    -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.25);
-    -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.25);
-    transition: 0.3s ease-in-out;
+  width: 18rem;
+  color: white;
+  background-color: var(--primary);
+  border: 0;
+  font-size: 3rem;
+  padding: 10px;
+  margin: 10px 0;
+  font-family: "Geo";
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+  transition: 0.3s ease-in-out;
 }
 
 .button-container button:hover {
-    transform: scale(1.025);
+  transform: scale(1.025);
 }
 
 @font-face {
-    font-weight: 700;
-    font-family: "Geo";
-    src: url(../fonts/Geo-Regular.ttf);
+  font-weight: 700;
+  font-family: "Geo";
+  src: url(../fonts/Geo-Regular.ttf);
 }
 
 @font-face {
-    font-family: "Geo Italic";
-    src: url(../fonts/Geo-Italic.ttf);
+  font-family: "Geo Italic";
+  src: url(../fonts/Geo-Italic.ttf);
 }
-
 
 @media only screen and (max-width: 1200px) {
-    .header {
-        font-size: 3rem;
-    }
-    
+  .header {
+    font-size: 3rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .logo {
+    height: 10rem;
+  }
+  .button-container button {
+    width: 15rem;
+    font-size: 7.5vw;
+  }
+  .button-container {
+    flex-direction: column;
+    gap: 5px;
+  }
 }
