@@ -8,10 +8,19 @@ if (!isset($_SESSION['passenger_count'])) {
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $_SESSION['student_number'] = $_POST['student_number'] ?: null;
-    $_SESSION['payment_method'] = $_POST['payment_method'];
+
+    if (isset($_POST['gcash_x'])) {
+        $_SESSION['payment_method'] = 'GCash';
+    } elseif (isset($_POST['paymaya_x'])) {
+        $_SESSION['payment_method'] = 'PayMaya';
+    } else {
+        $_SESSION['payment_method'] = 'GCash';
+    }
+
     header('Location: payment.php');
     exit();
 }
+
 
 $passenger_count = $_SESSION['passenger_count'];
 $price_per_passenger = 20.00;
@@ -53,8 +62,8 @@ $total_amount = $passenger_count * $price_per_passenger;
         </div>
         <h1 class="header">Payment Options</h1>
         <div class="payment-options">
-            <input type="image" src="../assets/images/gcash.png" name="payment_method" value="GCash" />
-            <input type="image" src="../assets/images/paymaya.png" name="payment_method" value="PayMaya" />
+            <input type="image" src="../assets/images/gcash.png" name="gcash" value="GCash" />
+            <input type="image" src="../assets/images/paymaya.png" name="paymaya" value="PayMaya" />
             </form>
             <!-- https://stackoverflow.com/questions/8683528/embed-image-in-a-button-element -->
         </div>
