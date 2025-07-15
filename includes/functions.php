@@ -17,8 +17,12 @@ function getBaseUrl()
 {
     $protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') ? "https://" : "http://";
     $host = $_SERVER['HTTP_HOST'];
-    $project = explode('/', $_SERVER['REQUEST_URI'])[1]; // gets the folder name dynamically
-    return $protocol . $host . '/' . $project;
+
+    $scriptDir = dirname($_SERVER['SCRIPT_NAME']);
+    $projectRoot = str_replace('/pages', '', $scriptDir);
+
+    return $protocol . $host . $projectRoot;
 }
+
 
 ?>
