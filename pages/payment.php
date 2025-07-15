@@ -5,7 +5,7 @@ require_once '../includes/db.php';
 
 $passenger_count = $_SESSION['passenger_count'] ?? 1;
 $student_number = $_SESSION['student_number'] ?? null;
-$payment_method = $_SESSION['payment_method'] ?? 'GCash';
+$payment_method = $_SESSION['payment_method'];
 
 if (!$passenger_count || !$payment_method) {
     header('Location: passengers_page.php');
