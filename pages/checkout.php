@@ -8,7 +8,7 @@ if (!isset($_SESSION['passenger_count'])) {
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $_SESSION['student_number'] = $_POST['student_number'] ?: null;
-    $_SESSION['payment_method'] = $_POST['payment_method'] ?? 'GCash';
+    $_SESSION['payment_method'] = $_POST['payment_method'];
     header('Location: payment.php');
     exit();
 }
