@@ -12,4 +12,13 @@ function getLocalIp()
     socket_close($sock);
     return $local_ip ?? 'localhost';
 }
+
+function getBaseUrl()
+{
+    $protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') ? "https://" : "http://";
+    $host = $_SERVER['HTTP_HOST'];
+    $project = explode('/', $_SERVER['REQUEST_URI'])[1]; // gets the folder name dynamically
+    return $protocol . $host . '/' . $project;
+}
+
 ?>
