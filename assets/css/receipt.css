@@ -7,10 +7,14 @@
   flex-direction: column;
 }
 
+/* START OF NAVBAR */
 .navbar {
   margin-bottom: 4rem;
 }
+/* END OF NAVBAR */
 
+
+/* START OF RECEIPT */
 .receipt-container {
   display: flex;
   justify-content: center;
@@ -87,7 +91,10 @@
   margin: 0 1rem;
   color: black;
 }
+/* END OF RECEIPT */
 
+
+/* START OF RESPONSIVENESS */
 @media (max-width: 768px) {
   .receipt-bg {
     width: 90%;
@@ -153,3 +160,4 @@
     margin: 0 1rem;
   }
 }
+/* END OF RESPONSIVENESS */

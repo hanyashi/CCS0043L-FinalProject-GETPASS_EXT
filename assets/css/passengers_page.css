@@ -4,6 +4,7 @@ body {
   height: 100vh;
 }
 
+/* START OF NAVBAR */
 .navbar a {
   color: var(--primary);
   font-family: "Geo";
@@ -15,8 +16,9 @@ body {
 .navbar i {
   color: var(--secondary);
 }
+/* END OF NAVBAR */
 
-/* Passenger Cards */
+/* START OF PASSENGER CARDS */
 .passenger {
   text-align: center;
   display: flex;
@@ -62,6 +64,7 @@ body {
 .passenger-cards button:hover {
   transform: scale(1.025);
 }
+/* END OF PASSENGER CARDS */
 
 .proceed-button {
   padding: 10px 20px;
@@ -78,6 +81,7 @@ body {
   transition: 0.3s ease-in-out;
 }
 
+/* SELECTED CARD BUTTON */
 .selected {
   scale: 1.1;
   border: 3px solid green !important;
@@ -86,7 +90,10 @@ body {
 .proceed-button:hover {
   transform: scale(1.05);
 }
+/* END OF SELECTED CARD */
 
+
+/* START OF RESPONSIVENESS */
 @media only screen and (max-width: 1200px) {
   .passenger-cards button {
     padding: 4rem;
@@ -131,3 +138,4 @@ body {
     object-fit: contain;
   }
 }
+/* END OF RESPONSIVENESS */

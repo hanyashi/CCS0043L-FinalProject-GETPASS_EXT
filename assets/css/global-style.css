@@ -3,6 +3,7 @@
   --secondary: #5d737f;
 }
 
+/* START OF FONTS */
 @font-face {
   font-weight: 700;
   font-family: "Geo";
@@ -13,6 +14,7 @@
   font-family: "Geo Italic";
   src: url(../fonts/Geo-Italic.ttf);
 }
+/* END OF FONTS */
 
 * {
   margin: 0;
@@ -41,6 +43,7 @@
   padding-top: 10px;
 }
 
+/* START OF NAVBAR */
 .navbar {
   margin-bottom: 7.5rem;
 }
@@ -56,7 +59,10 @@
 .navbar i {
   color: var(--secondary);
 }
+/* END OF NAVBAR */
 
+
+/* START OF RESPONSIVENESS */
 @media screen and (max-width: 768px) {
   .navbar {
     display: flex;
@@ -64,3 +70,4 @@
     margin-bottom: 4rem;
   }
 }
+/* END OF RESPONSIVENESS */

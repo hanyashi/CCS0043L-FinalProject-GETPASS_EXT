@@ -14,6 +14,7 @@ body {
   height: 100vh;
 }
 
+/* START OF QR CODE */
 .qr-code-container {
   display: flex;
   justify-content: center;
@@ -30,7 +31,10 @@ body {
 .qr-code-bg img {
   height: 25rem;
 }
+/* END OF QR CODE */
 
+
+/* START OF RESPONSIVENESS */
 @media only screen and (max-width: 1200px) {
   .qr-code-bg img {
     height: 17rem;
@@ -39,3 +43,4 @@ body {
     flex-direction: column;
   }
 }
+/* END OF RESPONSIVENESS */
