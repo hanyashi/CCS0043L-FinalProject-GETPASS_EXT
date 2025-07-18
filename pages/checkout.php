@@ -65,7 +65,6 @@ $total_amount = $passenger_count * $price_per_passenger;
             <input type="image" src="../assets/images/gcash.png" name="gcash" value="GCash" />
             <input type="image" src="../assets/images/paymaya.png" name="paymaya" value="PayMaya" />
             </form>
-            <!-- https://stackoverflow.com/questions/8683528/embed-image-in-a-button-element -->
         </div>
     </div>
 </body>

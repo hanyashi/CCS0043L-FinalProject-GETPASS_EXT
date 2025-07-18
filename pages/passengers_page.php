@@ -54,9 +54,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     </div>
 
     <script>
-        // handle card selection via query selectors and handle user inputs via getelementbyid
-        // getattribute to get the value of the data-value attribute
-        // disallow continuing if no card is selected
         const cards = document.querySelectorAll('.card');
         const form = document.getElementById('passenger_count');
 

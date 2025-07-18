@@ -24,12 +24,8 @@ $stmt->execute();
 $stmt->close();
 
 $baseUrl = getBaseUrl();
-$host = $_SERVER['HTTP_HOST'];
-$ip = getLocalIp();
 $qr_link = $baseUrl . '/pages/receipt.php?transaction=' . urlencode($uuid);
 $qr_url = "https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=" . urlencode($qr_link);
-
-
 ?>
 
 <!DOCTYPE html>
