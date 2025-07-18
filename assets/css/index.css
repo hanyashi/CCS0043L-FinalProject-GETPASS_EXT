@@ -28,6 +28,7 @@ body {
   position: fixed;
 }
 
+/* START OF CONTENT */
 .main-index {
   height: fit-content;
   z-index: 1;
@@ -93,18 +94,10 @@ body {
 .button-container button:hover {
   transform: scale(1.025);
 }
+/* END OF CONTENT */
 
-@font-face {
-  font-weight: 700;
-  font-family: "Geo";
-  src: url(../fonts/Geo-Regular.ttf);
-}
 
-@font-face {
-  font-family: "Geo Italic";
-  src: url(../fonts/Geo-Italic.ttf);
-}
-
+/* START OF RESPONSIVENESS */
 @media only screen and (max-width: 1200px) {
   .header {
     font-size: 3rem;
@@ -124,3 +117,4 @@ body {
     gap: 5px;
   }
 }
+/* END OF RESPONSIVENESS */
